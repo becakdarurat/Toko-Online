@@ -11,7 +11,7 @@
     <link rel="icon" type="image/jpeg" href="img/coding.jpg">
 
     {{-- Link CSS vanila --}}
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Daftar.css">
 
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"

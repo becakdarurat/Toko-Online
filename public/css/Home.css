@@ -1,6 +1,7 @@
 body {
     width: 100vw !important;
     height: 1000px !important;
+    overflow-x: hidden;
 }
 header nav h1 {
     font-size: 40px;

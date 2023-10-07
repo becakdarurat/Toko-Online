@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,5 @@ Route::get('/',[ProfileController::class,'Daftar']);
 Route::get('/Login',[ProfileController::class,'Login']);
 
 Route::get('/Home',[ProfileController::class,'Home']);
+
+Route::get('/Blog',[PostController::class,'index']);

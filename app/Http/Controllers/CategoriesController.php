@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Create;
-use App\Http\Requests\StoreCreateRequest;
-use App\Http\Requests\UpdateCreateRequest;
+use App\Models\Categories;
+use App\Http\Requests\StoreCategoriesRequest;
+use App\Http\Requests\UpdateCategoriesRequest;
 
-class CreateController extends Controller
+class CategoriesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class CreateController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreCreateRequest $request)
+    public function store(StoreCategoriesRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class CreateController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Create $create)
+    public function show(Categories $categories)
     {
         //
     }
@@ -43,7 +43,7 @@ class CreateController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Create $create)
+    public function edit(Categories $categories)
     {
         //
     }
@@ -51,7 +51,7 @@ class CreateController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateCreateRequest $request, Create $create)
+    public function update(UpdateCategoriesRequest $request, Categories $categories)
     {
         //
     }
@@ -59,7 +59,7 @@ class CreateController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Create $create)
+    public function destroy(Categories $categories)
     {
         //
     }

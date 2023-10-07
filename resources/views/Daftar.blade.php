@@ -16,7 +16,7 @@
 {{-- Form --}}
     <div class="row d-flex justify-content-center mt-5 text-white">
         <div class="col-md-6 text-center">
-            <form action="{{ route('actionlogin') }}" method="post" class="" style="height: 200px;">
+            <form action="#" method="post" class="" style="height: 200px;">
                 {{-- CSRF adalah singkatan dari Cross-site request forgery yang merupakan sebuah serangan yang dilakukan oleh pengguna yang tidak terautentikasi untuk mengeksekusi perintah. Untuk mengatasi ini, Laravel sudah menyediakan CSRF Token. Nantinya token inilah yang melakukan verifikasi apakah request yang diberikan memang berasal dari user yang bersangkutan. --}}
             @csrf
                 <label for="username" class="fw-bold">Username</label>

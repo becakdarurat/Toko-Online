@@ -30,15 +30,15 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="d-flex">
+      <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNav" style="transform: translateY(-10px)">
+      <ul class="d-flex" style="transform: translateX(70px)">
         <li><a href="#Profile">Profile</a></li>
         <li><a href="#Skills">Skills</a></li>
         <li><a href="#Project">Project</a></li>
         <li><a href="#Contact">Contact</a></li>
       </ul>
       <p>
-        <a href="#Contact">Kontak</a>
+        <a href="#Contact" style="margin-left: 250px" class="btn btn-success">Kontak</a>
       </p>
       </div>
     </nav>
@@ -171,6 +171,13 @@
     </div>
     {{-- Section end Projects --}}
 
+    <div class="row mt-5">
+      <div class="col-md-12 text-center">
+        <h1>Hubungin saya</h1>
+        <p class="text-secondary">Contact me</p>
+      </div>
+    </div>
+
     {{-- Section Start Kontak --}}
     <section class="section_Kontak mt-5" id="Contact">
       <div class="container" style="background-color: azure !important">
@@ -227,7 +234,6 @@
       </div>
     </section>
     {{-- Section End Kontak --}}
-
 
 
 <footer class="bg-success mt-5 text-center d-flex justify-content-center">

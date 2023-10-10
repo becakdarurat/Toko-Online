@@ -1,34 +1,32 @@
-@extends('layouts.main')
+@extends('layouts.blog_main')
 
 @section('container')
-{{-- Gambar --}}
-    <div class="row mb-4">
-        <div class="col-md-12 d-flex justify-content-center mt-4">
-            <img src="img/coding.jpg" alt="" class="img-fluid rounded-circle img-thumbnail" style="width: 80px;">
+<div class="container d-flex justify-content-center align-items-center bg-success" id="container">
+    <form action="" id="Form" class="d-flex flex-wrap fs-5 ">
+        <label for="username" class="text-center">Username</label>
+        <input type="text" name="" id="username" placeholder="Masukkan Username" name="username" class="form-control">
+        <label for="email" class="text-center">Email</label>
+        <input type="text" name="" id="email" placeholder="Masukkan Email Anda" name="email" class="form-control">
+        <label for="password">Password</label>
+        <input type="text" name="" id="password" placeholder="Masukkan Password" name="password" class="form-control">
+        <label for="kpassword">Konfirmasi Password</label>
+        <input type="text" name="" id="kpassword" placeholder="Masukkan Konfirmasi Password" name="kpassword" class="form-control">
+        <label for="pendidikan">Pendidikan Terakhir</label>
+        <select name="pendidikan" id="pendidikan" class="form-control">
+            <option value="SD">SD</option>
+            <option value="SMP">SMP</option>
+            <option value="SMA">SMA</option>
+            <option value="SMK">SMK</option>
+            <option value="D3">D3</option>
+            <option value="S1">S1</option>
+            <option value="S2">S2</option>
+            <option value="S3">S3</option>
+        </select>
+        <div class="mb-3 form-check" style="width: 100%;">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
-    </div>
-{{-- teks New Account --}}
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="text-center">New <span class="text-white">Account</span></h1>
-        </div>
-    </div>
-{{-- Form --}}
-    <div class="row d-flex justify-content-center mt-5 text-white">
-        <div class="col-md-6 text-center">
-            <form action="#" method="post" class="" style="height: 200px;">
-                {{-- CSRF adalah singkatan dari Cross-site request forgery yang merupakan sebuah serangan yang dilakukan oleh pengguna yang tidak terautentikasi untuk mengeksekusi perintah. Untuk mengatasi ini, Laravel sudah menyediakan CSRF Token. Nantinya token inilah yang melakukan verifikasi apakah request yang diberikan memang berasal dari user yang bersangkutan. --}}
-            @csrf
-                <label for="username" class="fw-bold">Username</label>
-                <input type="text" class="form-control form-control-lg" placeholder="Masukkan Nama anda!" id="username" name="username">
-                <label for="password" class="fw-bold">Password</label>
-                <input type="password" class="form-control form-control-lg" placeholder="Masukkan Password anda!" id="password" name="password">
-                <label for="kpassword" class="fw-bold">Konfirmasi Password</label>
-                <input type="password" class="form-control form-control-lg" placeholder="Masukkan Konfirmasi Password!" id="kpassword" name="kpassword">
-                <button class="btn btn-primary mt-3" type="submit">
-                    <a href="/Login" class="text-white" style="text-decoration: none">Daftar!</a>
-                </button>
-            </form>
-        </div>
-    </div>
+        <button type="submit" class="btn btn-primary mx-auto">Submit</button>
+    </form>
+</div>
 @endsection

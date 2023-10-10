@@ -7,9 +7,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    {{-- Fevicon --}}
-    <link rel="icon" type="image/jpeg" href="img/coding.jpg">
-
     {{-- Link CSS vanila --}}
     <link rel="stylesheet" href="css/Daftar.css">
 
@@ -20,11 +17,9 @@
 </head>
 
 <body>
-<section class="celas_section d-flex justify-content-center align-items-center">
-    <div class="container " style="width: 650px; border: 2px solid rgb(9, 161, 154); height: 500px; border-radius: 8px; background-color: blueviolet">
+  
         @yield('container')
-    </div>
-</section>
+    
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

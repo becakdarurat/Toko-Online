@@ -1,8 +1,9 @@
 <?php
 
+use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[ProfileController::class,'Daftar']);
+
 
 Route::get('/Login',[ProfileController::class,'Login']);
 

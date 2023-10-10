@@ -1,5 +1,12 @@
-.celas_section {
-    width: 100vw;
+#container {
     height: 100vh;
-    background-color: aliceblue;
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#container #form {
+    width: 100%;
+}
+#container #form > * {
+    margin-top: 20px;
 }

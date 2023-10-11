@@ -15,7 +15,17 @@ class PostController extends Controller
             "css" => "css/Home.css",
             "cssb" => "css/bootstrap.min.css",
             "js" => "js/bootstrap.min.js",
+            // "posts" => Post::with(['user','category'])->latest()->get()
             "posts" => Post::latest()->get(),
+        ]);
+    }
+    public function slug(Post $post){
+        return view('Posts',[
+            "title" => "Halaman Blog",
+            "css" => "css/Home.css",
+            "cssb" => "css/bootstrap.min.css",
+            "js" => "js/bootstrap.min.js",
+            "posts" => $post
         ]);
     }
 }

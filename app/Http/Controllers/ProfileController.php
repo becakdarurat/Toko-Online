@@ -16,7 +16,7 @@ class ProfileController extends Controller
     }
     public function Login(){
         return view('Login',[
-            "title" => 'Halaman Daftar',
+            "title" => 'Halaman Login',
             "css" => "css/Login.css",
             "cssb" => "css/bootstrap.min.css",
             "js" => "js/bootstrap.min.js",

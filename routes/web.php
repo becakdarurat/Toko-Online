@@ -24,3 +24,5 @@ Route::get('/Login',[ProfileController::class,'Login']);
 Route::get('/Home',[ProfileController::class,'Home']);
 
 Route::get('/Blog',[PostController::class,'index']);
+
+Route::get('/posts/{post:slug}',[PostController::class, 'slug']);

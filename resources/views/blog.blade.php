@@ -28,6 +28,10 @@
         <img src="https://source.unsplash.com/random/500x500?" class="card-img-top" alt="">
         <div class="card-body">
           <h5 class="card-title">{{ $post->User->name }}</h5>
+          <p class="card-text">
+            By. <a href="#" class="text-decoration-none ">{{ $posts[0]->User->name }}</a>
+            <small class="text-body-secondary">{{ $posts[0]->created_at->diffForHumans() }}</small>
+          </p>
           <p class="card-text">{{ $post->excerpt }}</p>
           <a href="#" class="btn btn-primary">Read More</a>
         </div>

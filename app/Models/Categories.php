@@ -11,4 +11,8 @@ class Categories extends Model
     use HasFactory;
     protected $guarded = ['id'];
 
+    public function Post()
+    {
+        return $this->hasMany(Post::class);
+    }
 }

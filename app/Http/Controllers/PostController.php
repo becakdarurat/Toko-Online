@@ -19,6 +19,15 @@ class PostController extends Controller
             "posts" => Post::latest()->get(),
         ]);
     }
+    public function Category(){
+        return view('Category',[
+            "title" => "Halaman Blog",
+            "css" => "css/Home.css",
+            "cssb" => "css/bootstrap.min.css",
+            "js" => "js/bootstrap.min.js",
+            "posts" => Categories::all(),
+        ]);
+    }
     public function slug(Post $post){
         return view('Posts',[
             "title" => "Halaman Blog",

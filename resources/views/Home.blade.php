@@ -38,7 +38,7 @@
         <li><a href="#Contact">Contact</a></li>
       </ul>
       <p>
-        <a href="#Contact" style="margin-left: 250px" class="btn btn-success">Kontak</a>
+        <a href="/Login" style="margin-left: 250px;" class="btn btn-warning">Log-in</a>
       </p>
       </div>
     </nav>

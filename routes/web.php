@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
@@ -19,7 +20,8 @@ use App\Http\Controllers\ProfileController;
 Route::get('/',[ProfileController::class,'Daftar']);
 
 
-Route::get('/Login',[ProfileController::class,'Login']);
+Route::get('/Login',[LoginController::class,'index']);
+Route::post('/Login',[LoginController::class,'store']);
 
 Route::get('/Home',[ProfileController::class,'Home']);
 

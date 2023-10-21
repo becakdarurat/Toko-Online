@@ -10,6 +10,7 @@ class ProfileController extends Controller
         return view('Daftar',[
             "title" => 'Halaman Daftar',
             "css" => "css/Daftar.css",
+            "active" => "daftar",
             "cssb" => "css/bootstrap.min.css",
             "js" => "js/bootstrap.min.js",
         ]);

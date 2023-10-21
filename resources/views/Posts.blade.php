@@ -10,7 +10,9 @@
                     By. <a href="#" class= "text-decoration-none ">{{ $posts->User->name }}</a>
                     <small class="text-body-secondary">{{ $posts->created_at->diffForHumans() }}</small>
                 </p>
-                <p>{{ $posts->body }}</p>
+                <img src="https://source.unsplash.com/random/1200x400?" class="card-img-top" alt="...">
+                <p>{!! $posts->body !!}</p>
+                <a href="/Blog">Back to Blog</a>
             </div>
         </div>
     </div>
